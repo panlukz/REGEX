@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<title>regex</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8" />
+	<link rel="stylesheet" href="reset.css" type="text/css" media="screen" charset="utf-8" />
+	
+	</head>
+	
+	<body>
+		<h1>Testowanie wyrażeń regularnych JavaScript</h1>
+		<div id="forms">			
+			<form id="exForm">
+				<label for="ex">Wyrażenie: regex = </label>
+				/ <input type="text" name="ex" value="" id="ex" /> /
+				<input type="text" name="flag" value="g" id="flag" />
+			</form>
+			
+			<form id="findForm">
+				<textarea name="text" id="text" name="text">Tu wpisz/wklej tekst w którym wyszukiwane będą wyrażenia</textarea>
+			</form>
+			
+			<pre id="found"></pre>
+		</div>
+		<div id="details">
+			<h2>Metaznaki</h2>			
+			<table id="meta">
+			<tr>
+			<td>^</td>
+			<td>$</td>
+			<td>.</td>
+			<td>[...]</td>
+			<td>[^...]</td>
+			<td>|</td>
+			<td>(...)</td>
+			<td>?</td>
+			<td>+</td>
+			<td>*</td>
+			</tr>
+			<tr>
+			<td>{1}</td>
+			<td>\.</td>
+			<td>\*</td>
+			<td>\/</td>
+			<td>\?</td>
+			<td>\:</td>
+			<td>\+</td>
+			<td>\\</td>
+			<td>\=</td>
+			<td>\|</td>
+			</tr>
+			<tr>
+			<td>\s</td>
+			<td>\S</td>
+			<td>\w</td>
+			<td>\W</td>
+			<td>\d</td>
+			<td>\D</td>
+			<td>_</td>
+			<td>_</td>
+			<td>_</td>
+			<td>_</td>
+			</tr>
+			</table>
+		</div>
+		<footer>works on the most popular browsers :-)</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
